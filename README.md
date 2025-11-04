@@ -5,7 +5,7 @@
 [![Gradio](https://img.shields.io/badge/Gradio-4.0%2B-orange.svg)](https://gradio.app/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Development Time](https://img.shields.io/badge/Development-48%20hours-yellow.svg)](https://github.com)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([https://github.com](https://colab.research.google.com/gist/dxrkravehub/8cdeb51123be4c03557464677ba562a7/yolov8-florence-2-for-cv-defectoscopy.ipynb))
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/dxrkravehub/8cdeb51123be4c03557464677ba562a7/yolov8-florence-2-for-cv-defectoscopy.ipynb)
 
 > **⚡ Разработано за 48 часов** | Production-ready система детекции дефектов стальных поверхностей с двухконтурной AI архитектурой
 
@@ -402,7 +402,7 @@ augmentation_pipeline = {
 ### Архитектура YOLOv8
 
 ```python
-Model: YOLOv8n (nano - оптимизирована для скорости)
+Model: YOLOv8s (small - оптимизирована для скорости)
 Head: Decoupled (classification + regression)
 
 Input: 640x640x3 (grayscale converted to RGB)
@@ -415,6 +415,8 @@ Training:
 - Optimizer: AdamW
 - Learning rate: 0.001 (cosine decay)
 - Augmentation: Mosaic, MixUp, HSV, Affine
+
+Tuner: Optuna 5 / 15 Epochs
 ```
 
 ### Архитектура Florence-2
