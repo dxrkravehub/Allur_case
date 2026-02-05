@@ -1,0 +1,1 @@
+This folder contains the yolov8-large model, enlarged to 25 MB int8 using dynamic quantification.
